@@ -68,11 +68,11 @@ To install and run each application, follow these steps:
    ```bash
    cd ProjectName/target
    
-4. To run standard applications (1.FileSearchWithoutRecursion, 2.FileSearchMultiThreaded),
+4. To run standard applications (1.FileSearchWithoutRecursion, 2.FileSearchMultiThreaded) use:
    ```bash
    java FileSearchWithoutRecursion <rootPath> <depth> <mask>
 
-5. For the Telnet server, start the mock server:
+5. For the Telnet server application (FileSearchTelnetServer), start the mock server:
    ```bash
    java FileSearchTelnetServer <serverPort> <rootPath>
 
