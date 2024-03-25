@@ -9,7 +9,8 @@ public class FileSearchWithoutRecursion {
     public static void main(String[] args) { 	
         // Ensure that the correct number of arguments are provided
         if (args.length != 3) {
-            System.out.println("Usage: java FileSearchWithoutRecursion <rootPath> <depth> <mask>");
+            System.out.println("Usage: mvn exec:java -Dexec.mainClass=“firstTask.FileSearchWithoutRecursion” "
+            					+ "-Dexec.args=“<rootPath> <depth> \\\"<mask>\\\"\"");
             return;
         }
         
