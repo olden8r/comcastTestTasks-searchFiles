@@ -70,8 +70,8 @@ To install and run each application, follow these steps:
    
 4. To run standard applications (1.FileSearchWithoutRecursion, 2.FileSearchMultiThreaded) use:
    ```bash
-   mvn exec:java -Dexec.mainClass=“firstTask.FileSearchWithoutRecursion” -Dexec.args=“<rootPath> <depth> \"<mask>\""
-   mvn exec:java -Dexec.mainClass=“secondTask.FileSearchMultiThreaded" -Dexec.args=“<rootPath> <depth> \"<mask>\""
+   mvn exec:java -Dexec.mainClass="firstTask.FileSearchWithoutRecursion" -Dexec.args="<rootPath> <depth> \"<mask>\" "
+   mvn exec:java -Dexec.mainClass="secondTask.FileSearchMultiThreaded" -Dexec.args="<rootPath> <depth> \"<mask>\" "
 
 5. For the Telnet server application (FileSearchTelnetServer), start the mock server:
    ```bash
