@@ -12,7 +12,8 @@ public class FileSearchMultiThreaded {
 
     public static void main(String[] args) {
        if (args.length != 3) {
-            System.out.println("Usage: java FileSearchMultiThreaded <rootPath> <depth> <mask>");
+            System.out.println("Usage: mvn exec:java -Dexec.mainClass=\"secondTask.FileSearchMultiThreaded\" "
+            					+ "-Dexec.args=“<rootPath> <depth> \\\"<mask>\\\"\"");
             return;
         }
 
@@ -83,4 +84,3 @@ public class FileSearchMultiThreaded {
         }
     }
 }
-
