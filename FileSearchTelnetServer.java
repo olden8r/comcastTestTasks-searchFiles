@@ -13,7 +13,8 @@ public class FileSearchTelnetServer {
 
     public static void main(String[] args) {
         if (args.length != 2) {
-            System.out.println("Usage: java FileSearchTelnetServer <serverPort> <rootPath>");
+            System.out.println("Usage: mvn exec:java -Dexec.mainClass=\"thirdTask.FileSearchTelnetServer\" "
+            					+ "-Dexec.args=\"<serverPort> <rootPath>\"");
             return;
         }
 
@@ -66,7 +67,7 @@ public class FileSearchTelnetServer {
                  PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true)) {
 
                 out.println("Connected to the File Search Server.");
-                out.println("Enter search parameters in the format: depth mask");
+                out.println("Enter search parameters in the format: <depth> <mask>");
 
                 String inputLine;
                 while ((inputLine = in.readLine()) != null) {
@@ -82,7 +83,7 @@ public class FileSearchTelnetServer {
                             Thread.currentThread().interrupt();
                         }
                     } else {
-                        out.println("Error: Incorrect number of arguments. Usage: depth mask");
+                        out.println("Error: Incorrect number of arguments. Usage: <depth> <mask>");
                     }
                 }
             } catch (IOException e) {
